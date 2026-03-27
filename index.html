@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Alzahrani | Portfolio</title>
+    <meta name="description" content="Portfolio of Abdullah Alzahrani, Software Engineering student at KFUPM building practical web and software projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="site-header">
+        <nav class="container nav">
+            <a class="brand" href="#top" aria-label="Go to top">
+                <span class="brand-mark">AA</span>
+                <span class="brand-text">Abdullah Alzahrani</span>
+            </a>
+            <ul class="nav-links" role="list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Switch theme" type="button">
+                <span id="theme-icon">☀</span>
+                <span id="theme-label">Light</span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <p class="kicker">Software Engineering @ KFUPM</p>
+                    <p id="dynamic-greeting" class="dynamic-greeting" aria-live="polite"></p>
+                    <h1 class="hero-title">
+                        Abdullah<br><em>Alzahrani</em>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Building clean experiences and reliable software systems. Focused on practical architecture, responsive design, and AI-assisted development.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View Projects</a>
+                        <a class="btn btn-ghost" href="assets/Abdullah-Alzahrani-CV.pdf" download>Download CV</a>
+                        <a class="btn btn-ghost" href="#contact">Contact Me</a>
+                    </div>
+                    <div class="hero-status">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>Open to internship opportunities</span>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-delay">
+                    <div class="profile-wrap">
+                        <img
+                            src="assets/profile.png"
+                            alt="Abdullah Alzahrani"
+                            class="profile-img"
+                            loading="eager"
+                        >
+                        <div class="profile-badge">
+                            <span class="badge-dot"></span>
+                            Open to internships
+                        </div>
+                        <div class="profile-socials">
+                            <a href="https://github.com/Abdullah-Zh" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/abdullah-alzahrani-655310301" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-btn social-btn-linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <span class="section-tag">01 — About</span>
+                    <h2>Who I Am</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I'm Abdullah, a Software Engineering student at King Fahd University of Petroleum & Minerals (KFUPM), Dhahran. I focus on building practical software — from responsive web interfaces to desktop applications — with clean architecture and great UX at the core.
+                        </p>
+                        <p>
+                            Outside of engineering, I've led teams as Vice President at KFUPM Year Book, Content Team Lead at TechHub, and Volunteer Leader for the Shukran 3 Initiative. I thrive at the intersection of design and code.
+                        </p>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-pill">HTML &amp; CSS</div>
+                        <div class="skill-pill">JavaScript</div>
+                        <div class="skill-pill">Java &amp; JavaFX</div>
+                        <div class="skill-pill">Figma</div>
+                        <div class="skill-pill">Git &amp; GitHub</div>
+                        <div class="skill-pill">UML &amp; SRS</div>
+                        <div class="skill-pill">Design Patterns</div>
+                        <div class="skill-pill">AI-Assisted Dev</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <span class="section-tag">02 — Projects</span>
+                    <h2>Featured Work</h2>
+                </div>
+
+                <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="figma">Figma</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                    <button class="filter-btn" data-filter="patterns">Design Patterns</button>
+                    <button class="filter-btn" data-filter="uml">UML</button>
+                </div>
+
+                <div class="search-wrap">
+                    <label for="project-search" class="sr-only">Search projects</label>
+                    <span class="search-icon" aria-hidden="true">&#9906;</span>
+                    <input
+                        type="search"
+                        id="project-search"
+                        class="search-input"
+                        placeholder="Search projects…"
+                        aria-label="Search projects"
+                        autocomplete="off"
+                    >
+                </div>
+                <p id="no-results" class="no-results hidden" role="status" aria-live="polite">
+                    No projects found. Try a different search term or filter.
+                </p>
+
+                <div class="project-grid" id="project-grid">
+
+                    <article class="project-card" data-tags="figma uml">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=900&q=80" alt="Table-I mobile app wireframe and design planning" loading="lazy">
+                            <div class="project-overlay" aria-hidden="true"><span>View Project</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Table-I</h3>
+                            <p>Figma mobile app prototype for restaurant booking and pre-ordering, enhanced with social features — profiles, favorites, and user interaction.</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UML</span>
+                                <span class="tag">SRS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-tags="java patterns">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80" alt="Student schedule planning on a desk" loading="lazy">
+                            <div class="project-overlay" aria-hidden="true"><span>View Project</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Student Schedule Visualizer</h3>
+                            <p>JavaFX desktop app that imports Excel schedules and visualizes class routes using clean, principle-driven software design patterns.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">JavaFX</span>
+                                <span class="tag">Design Patterns</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-tags="java patterns">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Folder and file tree structure on coding screen" loading="lazy">
+                            <div class="project-overlay" aria-hidden="true"><span>View Project</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Folder Structure Visualizer</h3>
+                            <p>Desktop tool that recursively scans folders, calculates sizes, and renders the hierarchy using interchangeable Composite and Strategy design patterns.</p>
+                            <div class="project-tags">
+                                <span class="tag">Composite Pattern</span>
+                                <span class="tag">Strategy Pattern</span>
+                                <span class="tag">Java</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- GITHUB REPOS (Live API) -->
+        <section id="github" class="section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <span class="section-tag">03 — GitHub</span>
+                    <h2>Public Repositories</h2>
+                    <p class="section-desc">Live data fetched from the GitHub API.</p>
+                </div>
+                <div id="github-loading" class="loading-state" aria-live="polite" aria-label="Loading repositories">
+                    <div class="spinner"></div>
+                    <span>Fetching repositories…</span>
+                </div>
+                <div id="github-error" class="error-state hidden" role="alert">
+                    <span class="error-icon">&#9888;</span>
+                    <div>
+                        <p>Could not load GitHub repositories right now.</p>
+                        <button class="retry-btn" id="retry-github" type="button">Try again</button>
+                    </div>
+                </div>
+                <div id="github-empty" class="empty-state hidden" role="status">
+                    <p>No public repositories found.</p>
+                </div>
+                <div id="github-grid" class="github-grid hidden" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <!-- CV -->
+        <section id="cv" class="section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <span class="section-tag">04 — CV</span>
+                    <h2>Curriculum Vitae</h2>
+                </div>
+                <p class="section-desc">Download the latest version of my CV tailored to software engineering roles and internship opportunities.</p>
+                <a class="btn btn-primary" href="assets/Abdullah-Alzahrani-CV.pdf" download>Download CV (PDF)</a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container reveal">
+                <div class="section-header">
+                    <span class="section-tag">05 — Contact</span>
+                    <h2>Get In Touch</h2>
+                </div>
+                <p class="section-desc">Have a question, an opportunity, or just want to connect? Send a message below.</p>
+
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required aria-describedby="name-error">
+                        <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-describedby="email-error">
+                        <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here…" required aria-describedby="message-error"></textarea>
+                        <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                    </button>
+                </form>
+
+                <div id="form-success" class="form-success hidden" role="status" aria-live="polite">
+                    <span class="success-icon" aria-hidden="true">&#10003;</span>
+                    <div>
+                        <strong>Message received!</strong>
+                        <p>Thanks for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; 2026 Abdullah Alzahrani · SWE Foundation — Assignment 2</span>
+            <div class="footer-links">
+                <a href="https://github.com/Abdullah-Zh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/abdullah-alzahrani-655310301" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                <a href="assets/Abdullah-Alzahrani-CV.pdf" download>CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-top" class="scroll-top hidden" aria-label="Scroll to top" type="button">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
