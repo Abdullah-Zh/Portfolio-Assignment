@@ -84,6 +84,28 @@ This is a **static website** — no build tools, no dependencies, no installatio
 
 ---
 
+## How to Use
+
+After opening the portfolio in your browser:
+
+1. Use the navigation bar to jump to the About, Projects, GitHub, and Contact sections.
+2. Watch the hero section for the dynamic greeting that changes based on the time of day.
+3. Click the theme toggle to switch between light and dark mode; your preference is saved for future visits.
+4. Use the main action buttons in the hero section to view projects, download the CV, or go directly to the contact form.
+5. Browse the About section to view background information and technical skills.
+6. In the Projects section, use the filter buttons to show projects by category such as Figma, Java, Design Patterns, or UML.
+7. Type in the project search bar to filter projects instantly by matching text.
+8. If no project matches the selected filter or search term, a no-results message will appear automatically.
+9. Open the GitHub section to view public repositories loaded from the GitHub API, including repository name, description, language, and star count.
+10. If the GitHub request cannot load normally, the page will still show fallback repository cards so the section does not stay empty.
+11. Use the CV section or the hero button to download the PDF resume.
+12. Fill out the contact form with your name, email, and message; validation feedback appears immediately for missing or invalid input.
+13. Submit the form to see the simulated sending state and the success message after validation passes.
+14. Scroll through the page to see reveal animations, the scroll progress indicator, and the scroll-to-top button after moving down the page.
+15. On desktop or other fine-pointer devices, hover over buttons, cards, and visuals to see the interactive motion effects.
+
+---
+
 ## Technologies Used
 
 - **HTML5** — Semantic structure, accessibility attributes (ARIA roles, labels)
